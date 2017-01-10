@@ -204,15 +204,17 @@ atom-text-editor .search-results .marker.current-result .region,
   &.name.function {
     color: @blue;
   }
+
   &.name.type {
-    color: #C1D9CD;
+    color: @dark-yellow;
   }
 
   &.other.inherited-class {
     color: @green;
   }
-  &.name.class, &.name.type.class {
-    color: @light-orange;
+
+  &.name.type.instance {
+   text-decoration: underline;
   }
 
   &.name.section {
